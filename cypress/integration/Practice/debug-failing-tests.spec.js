@@ -1,6 +1,8 @@
 /*
   All of these tests are failing and it is your job to debug them
   to find out why.
+
+  Reference: https://learn.cypress.io/cypress-fundamentals/how-to-debug-failing-tests
 */
 describe("Debug Failing Tests", () => {
   beforeEach(() => {

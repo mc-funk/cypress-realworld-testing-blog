@@ -11,6 +11,8 @@ describe("Cypress is just JavaScript", () => {
     // a sortedPosts function which will sort the posts inside of response.body for you.
     // https://lodash.com/docs/4.17.15#forEach
 
+    // Reference: https://learn.cypress.io/cypress-fundamentals/cypress-is-just-javascript
+
     cy.visit("http://localhost:3000");
 
     cy.request("GET", "http://localhost:3000/api/posts").then((response) => {

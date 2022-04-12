@@ -4,6 +4,8 @@
   
   You can also click on the request in the Cypress Command Log for an even
   better experience.
+
+  Reference: https://learn.cypress.io/advanced-cypress-concepts/intercepting-network-requests
 */
 describe("Network Requests", () => {
   beforeEach(() => {

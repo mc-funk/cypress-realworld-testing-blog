@@ -1,4 +1,5 @@
 describe("Custom Cypress Commands", () => {
+  // Reference: https://learn.cypress.io/advanced-cypress-concepts/building-the-right-cypress-commands
   it("uses cy.getAllPosts()to retrieve all posts from the /api/posts endpoint", () => {
     // Create a custom Cypress Command called 'getAllPosts' which uses
     // cy.request() to get all of the posts from the /api/posts endpoint

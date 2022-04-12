@@ -1,4 +1,5 @@
 describe("Important Cypress Methods", () => {
+  // Reference: https://learn.cypress.io/advanced-cypress-concepts/important-cypress-methods-you-need-to-know
   it("uses cy.request() and cy.invoke() to slice the posts array", () => {
     // Use cy.request() to get all of the posts from the /api/posts endpoint
     // Then use cy.invoke() to 'slice' the response body by 1.
