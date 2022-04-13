@@ -21,6 +21,10 @@ describe("Cypress is just JavaScript", () => {
           (a, b) => new Date(b.date).valueOf() - new Date(a.date).valueOf()
         );
       };
+      // using untyped lodash for this? no.
+      sortedPosts.forEach((post, i) => {
+        cy.get(`[data-test=post-link-${i}]`).should('contain', post.title);
+      });
     });
   });
 
@@ -43,6 +47,11 @@ describe("Cypress is just JavaScript", () => {
           (a, b) => new Date(b.date).valueOf() - new Date(a.date).valueOf()
         );
       };
+      sortedPosts.forEach(({date}, i) => {
+        const isoDate = parseISO(date);
+        const formattedDate = format(isoDate, "LLLL d, yyyy");
+        cy.get(`data-test=post-date-${i}]`).should('contain', formattedDate)
+      })
     });
   });
 });
